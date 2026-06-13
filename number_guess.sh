@@ -14,3 +14,7 @@ else
     echo "Welcome back, $USERNAME! You have played $games_played games, and your best game took $best_game guesses."
   done
 fi
+
+NUM_TO_GUESS=$(( RANDOM % 1000 + 1 ))
+echo "Guess the secret number between 1 and 1000:"
+read guess
